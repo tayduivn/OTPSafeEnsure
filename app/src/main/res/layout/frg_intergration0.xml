@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="left|center"
+                android:paddingLeft="15dp"
+                android:text="动态口令"
+                android:textColor="#666" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_vercode_1"
+                            android:layout_width="34dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/circle_quera"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#005bac"
+                            android:textSize="34dp" />
+
+                        <TextView
+                            android:id="@+id/tv_vercode_2"
+                            android:layout_width="34dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/circle_quera"
+                            android:gravity="center"
+                            android:text="8"
+                            android:textColor="#005bac"
+                            android:textSize="34dp" />
+
+                        <TextView
+                            android:id="@+id/tv_vercode_3"
+                            android:layout_width="34dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/circle_quera"
+                            android:gravity="center"
+                            android:text="7"
+                            android:textColor="#005bac"
+                            android:textSize="34dp" />
+
+                        <TextView
+                            android:id="@+id/tv_vercode_4"
+                            android:layout_width="34dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/circle_quera"
+                            android:gravity="center"
+                            android:text="9"
+                            android:textColor="#005bac"
+                            android:textSize="34dp" />
+
+                        <TextView
+                            android:id="@+id/tv_vercode_5"
+                            android:layout_width="34dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/circle_quera"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="#005bac"
+                            android:textSize="34dp" />
+
+                        <TextView
+                            android:id="@+id/tv_vercode_6"
+                            android:layout_width="34dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/circle_quera"
+                            android:gravity="center"
+                            android:text="6"
+                            android:textColor="#005bac"
+                            android:textSize="34dp" />
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/pv_linear_buffer"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.itrus.ikey.safecenter.TOPMFA.widget.view.ImageNumber
+                            android:id="@+id/in0"
+                            android:layout_width="@dimen/clock_width"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/clock_padding"
+                            android:background="@drawable/bg0" />
+
+                        <com.itrus.ikey.safecenter.TOPMFA.widget.view.ImageNumber
+                            android:id="@+id/in1"
+                            android:layout_width="@dimen/clock_width"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/clock_padding"
+                            android:background="@drawable/bg0" />
+
+                        <com.itrus.ikey.safecenter.TOPMFA.widget.view.ImageNumber
+                            android:id="@+id/in2"
+                            android:layout_width="@dimen/clock_width"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/clock_padding"
+                            android:background="@drawable/bg0" />
+
+                        <com.itrus.ikey.safecenter.TOPMFA.widget.view.ImageNumber
+                            android:id="@+id/in3"
+                            android:layout_width="@dimen/clock_width"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/clock_padding"
+                            android:background="@drawable/bg0" />
+
+                        <com.itrus.ikey.safecenter.TOPMFA.widget.view.ImageNumber
+                            android:id="@+id/in4"
+                            android:layout_width="@dimen/clock_width"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/clock_padding"
+                            android:background="@drawable/bg0" />
+
+                        <com.itrus.ikey.safecenter.TOPMFA.widget.view.ImageNumber
+                            android:id="@+id/in5"
+                            android:layout_width="@dimen/clock_width"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/clock_padding"
+                            android:background="@drawable/bg0" />
+
+                    </LinearLayout>
+
+                    <!--<ProgressBar-->
+                        <!--android:id="@+id/pv_linear_buffer"-->
+                        <!--style="?android:attr/progressBarStyleHorizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="4dp"-->
+                        <!--android:layout_marginTop="5dp" />-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#ffffff"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/ll_my_authverify"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#d6d8da" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#d6d8da" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/authenticate" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:gravity="left|center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的认证"
+                            android:textColor="#333333"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:text="已认证的方式:5种"
+                            android:textColor="#19bf3b"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/icon_02" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="15dp"
+                    android:text="我的认证"
+                    android:textColor="#666" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray">
+
+                        <LinearLayout
+                            android:id="@+id/ll_authcenter_cert"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:colorControlHighlight="@color/black"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/index1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="证书" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray">
+
+                        <LinearLayout
+                            android:id="@+id/ll_authcenter_gesture"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/index2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="手势" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray">
+
+                        <LinearLayout
+                            android:id="@+id/ll_authcenter_fingerprint"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/index3" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="指纹" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray">
+
+                        <LinearLayout
+                            android:id="@+id/ll_authcenter_face"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:colorControlHighlight="@color/black"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/index4" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="人脸" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray">
+
+                        <LinearLayout
+                            android:id="@+id/ll_authcenter_face"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:colorControlHighlight="@color/black"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/index4" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="人脸" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray">
+
+                        <LinearLayout
+                            android:id="@+id/ll_authcenter_voice"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView5"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/index5" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="声纹" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_white_gray">
+
+                        <LinearLayout
+                            android:id="@+id/ll_authcenter_VPN"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/index6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="更多" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_vpn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_gray">
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="left|center"
+                android:paddingLeft="15dp"
+                android:text="我的足迹"
+                android:textColor="#666" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_gray">
+
+                <RelativeLayout
+                    android:id="@+id/ll_my_footprint"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/footprint" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/imageView"
+                        android:gravity="left|center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的足迹"
+                            android:textColor="#333333"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:text="上次登录: 09月09日 12:56 北京"
+                            android:textColor="#ff9b0b"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="35dp"
+                        android:background="@mipmap/arrow_right" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

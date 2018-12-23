@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_one"
+        android:layout_width="288dp"
+        android:layout_height="141dp"
+        android:elevation="3dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="37dp">
+        <TextView
+            android:id="@+id/tv_phone_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机当前时间:"
+            android:layout_marginTop="42dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/NormalTextSize"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/tv_phone_YTD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            android:text="2018-07-27    11:22:05"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/time_mend_show"
+            android:textSize="@dimen/NormalTextSize" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_two"
+        android:layout_width="288dp"
+        android:layout_height="141dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="185dp"
+        android:layout_marginLeft="35dp"
+        android:elevation="3dp">
+
+        <TextView
+            android:id="@+id/tv_UTC_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="42dp"
+            android:text="UTC标准时间:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/NormalTextSize" />
+
+        <TextView
+            android:id="@+id/tv_UTC_YTD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="20dp"
+            android:text="2018-07-27    11:22:05"
+            android:textColor="@color/time_mend_show"
+            android:textSize="@dimen/NormalTextSize" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_mend"
+        android:layout_width="215dp"
+        android:layout_height="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="125dp"
+        android:layout_marginLeft="70dp"
+        android:text="校对"
+        android:background="@drawable/time_mend_btn"
+        android:textColor="@color/red"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_ps"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:singleLine="false"
+        android:layout_marginLeft="70dp"
+        android:textSize="12sp"
+        android:text="为保证令牌的正确有效,请保持手机时间与标准时间相差在一分钟之内."/>
+
+
+</RelativeLayout>

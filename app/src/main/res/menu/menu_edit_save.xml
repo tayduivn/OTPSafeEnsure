@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_edit_userinfo"
+        android:icon="@drawable/edit"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_save_userinfo"
+        android:icon="@drawable/save"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+</menu>

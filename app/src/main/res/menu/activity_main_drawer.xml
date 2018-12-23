@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="主界面" />
+        <item
+            android:id="@+id/nav_again"
+            android:icon="@drawable/activation"
+            android:title="重新激活" />
+        <!--<item-->
+            <!--android:id="@+id/nav_time"-->
+            <!--android:icon="@drawable/time"-->
+            <!--android:title="时间校准" />-->
+        <item
+            android:id="@+id/nav_password"
+            android:icon="@drawable/left_password"
+            android:title="手势密码" />
+
+</menu>

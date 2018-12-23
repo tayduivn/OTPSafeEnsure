@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar"></include>
+
+    <LinearLayout
+        android:id="@+id/ll_footprint_logindevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="left|center"
+            android:text="当前登陆"
+            android:textColor="#666666"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d6d8da"/>
+
+        <com.itrus.ikey.safecenter.TOPMFA.widget.view.WaterDropListView
+            android:id="@+id/wdlv_login_devices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.itrus.ikey.safecenter.TOPMFA.widget.view.WaterDropListView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d6d8da"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="left|center"
+            android:text="最近一周登录"
+            android:textColor="#666666"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.itrus.ikey.safecenter.TOPMFA.widget.view.WaterDropListView
+            android:id="@+id/lv_footprint_loginweek"
+            android:layout_width="fill_parent"
+            android:divider="#00000000"
+            android:dividerHeight="0dip"
+            android:layout_height="fill_parent">
+        </com.itrus.ikey.safecenter.TOPMFA.widget.view.WaterDropListView>
+    </RelativeLayout>
+</LinearLayout>

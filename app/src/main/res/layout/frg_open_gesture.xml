@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_one"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/open_gesture_ll_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/global_margin_left_right"
+            android:gravity="center"
+            android:text="@string/gesture_ciper_name"
+            android:textSize="@dimen/open_gesture_text_size" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="@dimen/open_gesture_cb_weight"
+            android:layout_height="@dimen/open_gesture_cb_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/global_margin_left_right"
+            android:background="@drawable/chose_gesture_or_open"
+            android:button="@null" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_modify"
+        android:layout_width="@dimen/open_gesture_btn_modify_weight"
+        android:layout_height="@dimen/open_gesture_btn_modify_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/shape_blue_20px"
+        android:gravity="center"
+        android:text="@string/gesture_btn_modify"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="visible" />
+</LinearLayout>

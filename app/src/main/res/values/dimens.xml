@@ -1,0 +1,86 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="sp_content3">12sp</dimen>
+    <dimen name="sp_content2">14sp</dimen>
+    <dimen name="height_list_item">50dp</dimen>
+    <dimen name="sp_content">16sp</dimen>
+
+    <dimen name="clock_width">45dp</dimen>
+    <dimen name="clock_height">84dp</dimen>
+    <dimen name="clock_padding">4dp</dimen>
+
+    <dimen name="bg_width">48dp</dimen>
+    <dimen name="bg_height">90dp</dimen>
+
+
+    <!--标题栏高度-->
+    <dimen name="titlebar_height">50dp</dimen>
+    <!--每个blank条目的高度-->
+    <dimen name="item_height">48dp</dimen>
+    <dimen name="gesture_header_width">80dp</dimen>
+    <dimen name="gesture_header_height">80dp</dimen>
+    <dimen name="gesture_header_margint_top">80dp</dimen>
+    <dimen name="gesture_header_margint_bottom">10dp</dimen>
+    <!--页面的平行间距-->
+    <dimen name="activity_margin_horizontal">12dp</dimen>
+    <dimen name="activity_margin_vertical">6dp</dimen>
+    <dimen name="activity_margin_vertical2">12dp</dimen>
+    <dimen name="activity_margin_vertical4">24dp</dimen>
+
+
+    <!--抽屉栏目-->
+    <dimen name="nav_width">200dp</dimen>
+    <dimen name="nav_margin_top">30dp</dimen>
+    <dimen name="nav_item_height">48dp</dimen>
+    <dimen name="nav_item_icon_width">30dp</dimen>
+    <dimen name="nav_item_icon_height">30dp</dimen>
+    <dimen name="nav_item_margin_horizontal">24dp</dimen>
+    <!--抽屉栏目-->
+
+
+    <!-- 字体值 dp-->
+    <dimen name="text_dpsize_small_10">10sp</dimen>
+    <dimen name="text_dpsize_small_12">12sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_30">30sp</dimen>
+    <dimen name="text_dpsize_small">14sp</dimen>
+    <dimen name="text_dpsize_normal">16sp</dimen>
+    <dimen name="text_dpsize_big">18sp</dimen>
+    <dimen name="text_dpsize_19">19sp</dimen>
+    <dimen name="text_dpsize_more_big">20sp</dimen>
+    <dimen name="text_dpsize_more_big_24">24sp</dimen>
+
+
+    <!--otp主页面-->
+    <dimen name="phone_otp_ll_height">36dp</dimen>
+    <dimen name="phone_otp_show_ll_heignt">264dp</dimen>
+    <dimen name="phone_otp_show_margin_top">55dp</dimen>
+
+    <!--手势密码设置页面-->
+    <dimen name="gesture_textview_margin_top">70dp</dimen>
+    <dimen name="gesture_control_margin_top">60dp</dimen>
+    <dimen name="gesture_control_margin_left">25dp</dimen>
+    <!--手势密码打开-->
+    <dimen name="open_gesture_ll_height">46dp</dimen>
+    <dimen name="open_gesture_cb_open_height">13dp</dimen>
+    <dimen name="open_gesture_cb_open_weight">35dp</dimen>
+    <dimen name="open_gesture_text_size">18sp</dimen>
+    <dimen name="open_gesture_cb_weight">54dp</dimen>
+    <dimen name="open_gesture_cb_height">26dp</dimen>
+    <dimen name="open_gesture_btn_modify_weight">180dp</dimen>
+    <dimen name="open_gesture_btn_modify_height">33dp</dimen>
+
+
+    <!--通用设置-->
+    <dimen name="global_margin_left_right">16dp</dimen>
+    <dimen name="NormalTextSize">14sp</dimen>
+
+
+    <!--自定义dialog-->
+    <dimen name="dp_radius">4dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="sp_l">16sp</dimen>
+    <dimen name="dp_line">0.6dp</dimen>
+    <dimen name="sp_m">14sp</dimen>
+    <dimen name="sp_s">12sp</dimen>
+</resources>

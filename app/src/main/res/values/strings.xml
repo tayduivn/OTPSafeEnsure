@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">安信令牌</string>
+
+
+    <string name="nav_home">主页面</string>
+    <string name="nav_again">重新激活</string>
+    <string name="nav_time">时间校准</string>
+    <string name="nav_password">手势密码</string>
+
+
+    <string name="listfooterview_normal">查看更多</string>
+    <string name="listfooterview_ready">松开载入更多</string>
+    <string name="fragment_certification_center">认证中心</string>
+    <string name="fragment_devices">设备管理</string>
+    <string name="fragment_app_center">应用中心</string>
+    <string name="fragment_message_center">消息中心</string>
+    <string name="fragment_settings">设置</string>
+    <string name="cancel">取消</string>
+
+
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+
+    <!--指纹识别模块-->
+    <string name="sign_in">验证指纹</string>
+    <string name="password">密码</string>
+    <string name="fingerprint_description">验证指纹以继续</string>
+    <string name="fingerprint_hint">请将手指覆盖到指纹识别区域</string>
+    <string name="password_description">输入你的密码以继续</string>
+    <string name="fingerprint_not_recognized">验证指纹失败，请重试！</string>
+    <string name="fingerprint_success">验证成功</string>
+    <string name="new_fingerprint_enrolled_description">A new fingerprint was added to this device, so your password is required.</string>
+    <string name="use_fingerprint_in_future">Use fingerprint in the future</string>
+    <string name="use_fingerprint_to_authenticate_key">use_fingerprint_to_authenticate_key</string>
+
+    <string name="mobile_token">手机口令</string>
+    <string name="my_footprints">我的足迹</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--otp令牌部分-->
+    <string name="gesture_ciper_name">手势密码</string>
+    <string name="gesture_btn_modify">修改手势</string>
+    <string name="gesture_tittle_set_password">设手势密码</string>
+    <string name="gesture_set_new_password">请设置新的密码</string>
+    <string name="gesture_clear_password">清除密码</string>
+    <string name="gesture_edit_password">输入原密码</string>
+    <string name="gesture_setting_password">设置密码</string>
+    <string name="gesture_verify_password">验证密码</string>
+    <string name="gesture_verify_password1">绘制手势密码</string>
+    <string name="gesture_has_setting_password_hint">请输入已经设置过的密码</string>
+    <string name="gesture_need_setting_password_hint">请输入要设置的密码</string>
+    <string name="gesture_pwd_error_available_counts">密码错误，请重新输入</string>
+    <string name="gesture_pwd_error_again">密码错误，请重新输入</string>
+    <string name="gesture_pwd_min_point_count">密码不能少于%1$s个点</string>
+    <string name="gesture_again_input_pwd">请再次输入密码</string>
+    <string name="gesture_input_new_pwd">请输入新密码</string>
+    <string name="gesture_input_pwd_different">两次输入的密码不一致</string>
+    <string name="gesture_input_pwd_over_count">密码错误次数超过限制，不能再输入</string>
+    <string name="gesture_pwd_set_success">密码设置成功</string>
+    <string name="gesture_pwd_update_success">密码修改成功</string>
+    <string name="gesture_pwd_right">密码正确</string>
+    <string name="gesture_pwd_has_clear">密码已经清除</string>
+    <string name="gesture_pwd_exit">再按一次退出</string>
+    <string name="set_company_checked">下次不再提示</string>
+
+</resources>

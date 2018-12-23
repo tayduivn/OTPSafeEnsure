@@ -1,0 +1,237 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <!--no actionbar and title-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- menu-->
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/bg_title</item>
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">@color/red</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@color/background</item>
+        <!-- 抽屉菜单效果 -->
+        <item name="drawerArrowStyle">@style/AppTheme.JDDrawerArrowStyle</item>
+
+    </style>
+
+
+    <style name="MenuTextStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.JDDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <!--是否开启导航图标的旋转效果-->
+        <item name="spinBars">false</item>
+        <item name="color">@android:color/white</item>
+        <item name="colorControlNormal">#0078d7</item>
+    </style>
+    <!-- CheckBox -->
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_with_right</item>
+    </style>
+
+    <!-- ToolBar -->
+    <style name="myToolBarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="MenuItemRippleStyle" parent="Material.Drawable.Ripple.Wave">
+        <item name="rd_rippleColor">#902DA0FF</item>
+        <item name="rd_rippleAnimDuration">300</item>
+        <item name="rd_maskType">rectangle</item>
+        <item name="rd_cornerRadius">0dp</item>
+    </style>
+
+    <!-- AppBar Style -->
+
+    <style name="AppBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="selectableItemBackground">@null</item>
+    </style>
+
+    <!-- Navigator Drawable -->
+
+    <style name="NavigatorDrawableIcon" parent="Material.Drawable.NavigationDrawerIcon">
+        <item name="lmd_strokeSize">3dp</item>
+        <item name="lmd_padding">18dp</item>
+    </style>
+
+
+    <style name="ToolbarRippleStyle" parent="Material.Drawable.Ripple.Touch.MatchView.Light">
+        <item name="rd_backgroundColor">@android:color/transparent</item>
+        <item name="rd_rippleColor">#33FFFFFF</item>
+    </style>
+
+    <!-- SnackBar Style -->
+
+    <style name="SnackBarSingleLine" parent="Material.Widget.SnackBar.Mobile">
+        <item name="sb_text">This is single-line snackbar.</item>
+        <item name="sb_actionText">CLOSE</item>
+        <item name="sb_duration">0</item>
+    </style>
+
+    <style name="SnackBarMultiLine" parent="Material.Widget.SnackBar.Mobile.MultiLine">
+        <item name="sb_text">This is multi-line snackbar.\nIt will auto-close after 5s.</item>
+        <item name="sb_actionText"></item>
+        <item name="sb_duration">5000</item>
+    </style>
+
+    <style name="SimpleDialog" parent="Material.App.Dialog.Simple">
+        <item name="di_inAnimation">@anim/anim_scale_in</item>
+        <item name="di_outAnimation">@anim/anim_scale_out</item>
+    </style>
+
+    <style name="SimpleDialogLight" parent="Material.App.Dialog.Simple.Light">
+        <item name="di_inAnimation">@anim/anim_scale_in</item>
+        <item name="di_outAnimation">@anim/anim_scale_out</item>
+    </style>
+
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="ReplacementContactView" parent="Material.Drawable.Ripple.Wave.Light">
+        <!--<item name="rd_cornerRadius">0dp</item>-->
+        <!--<item name="rd_delayClick">none</item>-->
+
+        <!--<item name="android:minHeight">56dp</item>-->
+        <!--<item name="cv_buttonSize">0dp</item>-->
+        <!--<item name="cv_avatarSize">40dp</item>-->
+        <!--<item name="cv_spacing">8dp</item>-->
+        <!--<item name="cv_nameTextAppearance">@style/TextAppearance.AppCompat.Subhead</item>-->
+        <!--<item name="cv_nameTextColor">@color/abc_primary_text_material_light</item>-->
+        <!--<item name="cv_addressTextAppearance">@style/TextAppearance.AppCompat.Body1</item>-->
+        <!--<item name="cv_addressTextColor">@color/abc_primary_text_material_light</item>-->
+    </style>
+
+    <style name="SelectedContactView" parent="Material.Drawable.Ripple.Wave.Light">
+        <!--<item name="android:background">#FF00B8D4</item>-->
+        <!--<item name="rd_cornerRadius">0dp</item>-->
+        <!--<item name="rd_delayClick">none</item>-->
+
+        <!--<item name="android:minHeight">72dp</item>-->
+        <!--<item name="cv_buttonSrc">@drawable/ic_cancel_white_24dp</item>-->
+        <!--<item name="cv_buttonSize">48dp</item>-->
+        <!--<item name="cv_nameTextColor">#FFFFFFFF</item>-->
+        <!--<item name="cv_addressTextColor">#FFFFFFFF</item>-->
+        <!--<item name="cv_avatarSize">40dp</item>-->
+        <!--<item name="cv_spacing">8dp</item>-->
+        <!--<item name="cv_nameTextAppearance">@style/TextAppearance.AppCompat.Subhead</item>-->
+        <!--<item name="cv_addressTextAppearance">@style/TextAppearance.AppCompat.Body1</item>-->
+    </style>
+
+    <style name="ContactEditText" parent="Material.Widget.EditText.Light">
+        <!--<item name="cet_spanHeight">32dp</item>-->
+        <!--<item name="cet_spanMaxWidth">150dp</item>-->
+        <!--<item name="cet_spanPaddingLeft">8dp</item>-->
+        <!--<item name="cet_spanPaddingRight">12dp</item>-->
+        <!--<item name="cet_spanTextSize">14sp</item>-->
+        <!--<item name="cet_spanTextColor">@color/abc_primary_text_material_light</item>-->
+        <!--<item name="cet_spanBackgroundColor">#FFE0E0E0</item>-->
+        <!--<item name="cet_spanSpacing">4dp</item>-->
+    </style>
+
+
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="MCTheme.Widget.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="Dialog1" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="checkBox"></style>
+
+
+    <style name="ProgressBar_Mini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">5dip</item>
+        <item name="android:minHeight">3dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progressbar_horizontal_1</item>
+    </style>
+
+
+    <!--首頁抽屜樣式-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- 提示弹框 -->
+    <style name="dialog_line_horizantal">
+        <item name="android:layout_height">@dimen/dp_line</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/light_gray</item>
+    </style>
+
+
+    <style name="dialog_line_vertical">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/dp_line</item>
+        <item name="android:background">@color/light_gray</item>
+    </style>
+
+    <style name="TranslucentNoTitle" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+</resources>
